@@ -27,7 +27,7 @@ export default class App extends React.Component {
 		return (
 			<div>
 				<h1>React ToDos Apps</h1>
-				<CreateTodo createTask={this.createTask.bind(this)} />
+				<CreateTodo todos={this.props} createTask={this.createTask.bind(this)} />
 				<TodosList 
 					todos={this.state.todos} 
 					toggleTask={this.toggleTask.bind(this)}
